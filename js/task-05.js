@@ -10,6 +10,7 @@ refs.yourName.addEventListener('input',oninputChange);
 function oninputChange (event){
     if (refs.yourName.value === '') {
         refs.nameOutput.textContent = 'Anonymous';
+        return;
     }
     refs.nameOutput.textContent = event.currentTarget.value;
 };
